@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+<template v-for="user in users">
+    <p>{{user.name}}</p>
+    <p>{{user.email}}</p>
+</template>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
