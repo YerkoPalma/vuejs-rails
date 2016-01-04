@@ -15,3 +15,6 @@
 /log/*
 !/log/.keep
 /tmp
+
+#Ignore c9 config
+/.c9
