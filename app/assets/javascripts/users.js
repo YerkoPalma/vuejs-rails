@@ -1,10 +1,18 @@
 $(document).on('ready page:change', function() {
     var Vue = require('vue');
     
-    
     Vue.use(require('vue-resource'));
     
-    console.log("reached users.js. Vue is " + (typeof Vue === 'undefined' ? "Bad" : "Ok"));
+    /**
+     *  Components
+     */
+     var UserTitle = Vue.extend({
+         template: "#usertitle"
+     });
+    
+    /**
+     *  Main Vue instance
+     */
     
     new Vue({
         el: 'body',
@@ -13,14 +21,16 @@ $(document).on('ready page:change', function() {
         },
         ready: function(){
             this.$http.get('users.json').then(function(response){
-                console.log("success");
+                
                 console.log(JSON.stringify(response.data));
                 this.users = response.data;
             }, function(response){
-                console.log("fail");
+                
                 console.log(JSON.stringify(response));
             });
-            console.log("Vue ready");
+        },
+        components: {
+            'user-title' : UserTitle
         }
     });
     
