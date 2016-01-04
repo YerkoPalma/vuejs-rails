@@ -49,3 +49,8 @@ Components are handled as partials with erb extension and registered in the main
     - [ ] Add remaining actions
     - [ ] Add a router
     - [ ] Use defined structure
+- [ ] Add unit testing
+    - [ ] Add js Unit testing
+    - [ ] Add Rails unit testing
+    - [ ] Add Wercker CI
+- [ ] Add Gulp tasks
