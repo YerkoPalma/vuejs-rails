@@ -43,3 +43,9 @@ Components are handled as partials with erb extension and registered in the main
     $ npm install
     $ bundle install
 
+### TODO
+
+- [ ] Replace Rails CRUD with Vue CRUD
+    - [ ] Add remaining actions
+    - [ ] Add a router
+    - [ ] Use defined structure
