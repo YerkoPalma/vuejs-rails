@@ -30,6 +30,12 @@ Components are handled as partials with erb extension and registered in the main
 
 ## Structure
 
+* `app/assets/javascript/[controller].js`: Contain the main Vue instance for the controller app
+* `app/assets/javascript/[controller]/[component].js`: Contains the components for the controller (just the logic, not the template)
+* `app/views/[controller]/index.html.erb`: Contain the main entry html file, it could be other different to index
+* `app/views/[controller]/[components]/`: Contains all the js components for a controller
+* `app/views/[controller]/[components]/[controller].js`: A partial that actually includes the rest of the components, this is the only partial included in the html view
+
 ## Instalation
 
     $ git clone [git-repo]

@@ -13,7 +13,6 @@ $(document).on('ready page:change', function() {
     /**
      *  Main Vue instance
      */
-    
     new Vue({
         el: 'body',
         data: {
