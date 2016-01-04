@@ -18,3 +18,6 @@
 
 #Ignore c9 config
 /.c9
+
+#Ignore node_modules
+/node_modules
