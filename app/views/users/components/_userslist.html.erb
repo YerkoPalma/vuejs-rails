@@ -1,6 +1,6 @@
 <script type="text/x-template"  id="userstemplate">
     <h1>Users list</h1>
     <template v-for="user in users">
-        <p><b>{{user.name}}</b> - {{user.email}}</p>
+        <p><a v-link="{ path: 'users/' + user.id }"><b>{{user.name}}</b></a> - {{user.email}}</p>
     </template>
 </script>

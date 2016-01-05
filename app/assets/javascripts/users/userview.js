@@ -1,4 +1,7 @@
 var Vue = require('vue');
+var url = require('url');
+
+console.log( url.parse(window.location.href).hash );
 
 module.exports = Vue.extend({
         template: "#usertemplate",
@@ -8,13 +11,13 @@ module.exports = Vue.extend({
             };
         },
         ready: function(){
-            this.$http.get('users/1.json').then(function(response){
+            //dirty hack, should find a vue better option
+            this.$http.get(url.parse(window.location.href).hash.substr(2) + '.json').then(function(response){
                 
-                console.log(JSON.stringify(response.data));
                 this.user = response.data;
             }, function(response){
                 
-                console.log(JSON.stringify(response));
+                //console.log(JSON.stringify(response));
             });
         },
     });

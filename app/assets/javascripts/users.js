@@ -9,6 +9,7 @@ $(document).on('ready page:change', function() {
      *  Components
      */
     var UsersList = require('./users/userslist');
+    var User = require('./users/userview');
     
     /**
      *  Main Vue instance
@@ -20,6 +21,9 @@ $(document).on('ready page:change', function() {
     router.map({
         '/users': {
             component: UsersList
+        },
+        '/users/:user_id': {
+            component: User
         }
     });
     
