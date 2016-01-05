@@ -6,17 +6,12 @@ $(document).on('ready page:change', function() {
     /**
      *  Components
      */
-     var UserTitle = Vue.extend({
-         template: "#usertitle"
-     });
-    
-    /**
-     *  Main Vue instance
-     */
-    new Vue({
-        el: 'body',
-        data: {
-            users: []
+    var Users = Vue.extend({
+        template: "#userstemplate",
+        data: function () {
+            return {
+                users: []
+            }
         },
         ready: function(){
             this.$http.get('users.json').then(function(response){
@@ -28,8 +23,15 @@ $(document).on('ready page:change', function() {
                 console.log(JSON.stringify(response));
             });
         },
+    });
+    
+    /**
+     *  Main Vue instance
+     */
+    new Vue({
+        el: 'body',
         components: {
-            'user-title' : UserTitle
+            'users-list' : Users
         }
     });
     
