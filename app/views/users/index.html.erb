@@ -1,9 +1,16 @@
 
 <%= render 'users' %>
 
-<h1>Users list</h1>
-<users-list></users-list>
+<div id='userapp'>
+    <router-view></router-view>
+    
+    <br>
 
-<br>
+    <p>
+        <a v-link="{ path: '/users' }">Usuarios</a>
+    </p>
+</div>
 
-<%= link_to 'New User', new_user_path %>
+
+
+
