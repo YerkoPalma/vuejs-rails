@@ -47,8 +47,14 @@ Components are handled as partials with erb extension and registered in the main
 
 - [ ] Replace Rails CRUD with Vue CRUD
     - [ ] Add remaining actions
-    - [ ] Add a router
-    - [ ] Use defined structure
+        - [x] Add Create Action
+        - [x] Add Read single action
+        - [x] Add Read all action
+        - [ ] Add Update action
+        - [ ] Add Delete action
+    - [x] Add a router
+    - [x] Use defined structure
+    - [ ] Remove extra code
 - [ ] Add unit testing
     - [ ] Add js Unit testing
     - [ ] Add Rails unit testing
