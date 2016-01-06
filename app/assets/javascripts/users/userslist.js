@@ -10,7 +10,6 @@ module.exports = Vue.extend({
         ready: function(){
             this.$http.get('users.json').then(function(response){
                 
-                console.log(JSON.stringify(response.data));
                 this.users = response.data;
             }, function(response){
                 
