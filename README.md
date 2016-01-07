@@ -45,16 +45,16 @@ Components are handled as partials with erb extension and registered in the main
 
 ### TODO
 
-- [ ] Replace Rails CRUD with Vue CRUD
-    - [ ] Add remaining actions
+- [x] Replace Rails CRUD with Vue CRUD
+    - [x] Add remaining actions
         - [x] Add Create Action
         - [x] Add Read single action
         - [x] Add Read all action
-        - [ ] Add Update action
-        - [ ] Add Delete action
+        - [x] Add Update action
+        - [x] Add Delete action
     - [x] Add a router
     - [x] Use defined structure
-    - [ ] Remove extra code
+    - [x] Remove extra code
 - [ ] Add unit testing
     - [ ] Add js Unit testing
     - [ ] Add Rails unit testing
