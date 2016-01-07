@@ -1,5 +1,7 @@
 # Vuejs + Rails template
 
+[![wercker status](https://app.wercker.com/status/32093e2092763e525b666ca83111a24f/s "wercker status")](https://app.wercker.com/project/bykey/32093e2092763e525b666ca83111a24f)
+
 This repo has a simple template for easy use of Rails and Vue.js 
 
 ## Usage
