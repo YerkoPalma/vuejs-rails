@@ -4,7 +4,7 @@
         <p>
             <a v-link="{ path: 'users/' + user.id }"><b>{{user.name}}</b></a> - {{user.email}} -  
             <a v-link="{ path: 'users/edit/' + user.id }">Editar</a> | 
-            <a >Eliminar</a> 
+            <a v-on:click="erase(user)">Eliminar</a> 
         </p>
     </template>
 </script>
