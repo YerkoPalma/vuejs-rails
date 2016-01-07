@@ -1,0 +1,7 @@
+box: phusion/passenger-ruby22
+build:
+    steps:
+        - bundle-install
+        - script:
+            name: rspec
+            code: bundle exec rake test
