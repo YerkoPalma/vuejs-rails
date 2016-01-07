@@ -1,6 +1,11 @@
 <script type="text/x-template"  id="userstemplate">
     <h1>Users list</h1>
     <template v-for="user in users">
-        <p><a v-link="{ path: 'users/' + user.id }"><b>{{user.name}}</b></a> - {{user.email}}</p>
+        <p>
+            <a v-link="{ path: 'users/' + user.id }"><b>{{user.name}}</b></a> - {{user.email}} -  
+            <a v-link="{ path: 'users/edit/' + user.id }">Editar</a> | 
+            <a >Eliminar</a> 
+        </p>
     </template>
 </script>
+<!-- el eliminar debe ser un metodo no una ruta en vue -->

@@ -11,6 +11,7 @@ $(document).on('ready page:change', function() {
     var UsersList = require('./users/userslist');
     var User = require('./users/userview');
     var AddUser = require('./users/adduser');
+    var EditUser = require('./users/edituser');
     
     /**
      *  Main Vue App, not an instance because of the router
@@ -31,6 +32,9 @@ $(document).on('ready page:change', function() {
         },
         '/users/add': {
             component: AddUser
+        },
+        'users/edit/:user_id': {
+            component: EditUser
         }
     });
     
