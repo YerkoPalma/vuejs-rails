@@ -57,6 +57,6 @@ Components are handled as partials with erb extension and registered in the main
     - [x] Remove extra code
 - [ ] Add unit testing
     - [ ] Add js Unit testing
-    - [ ] Add Rails unit testing
+    - [x] Add Rails unit testing
     - [ ] Add Wercker CI
 - [ ] Add Gulp tasks
