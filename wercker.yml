@@ -3,6 +3,7 @@ build:
     steps:
         - bundle-install
         - npm-install
+        - npm-test
         - script:
             name: rspec
             code: bundle exec rake test
