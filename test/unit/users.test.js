@@ -3,7 +3,7 @@ Vue.use(require('vue-resource'));
 //var browserify = require('browserify');
 //var fs = require('fs');
 var AddUsers = require('../../app/assets/javascripts/users/adduser');
-var UsersList = require('../../app/assets/javascripts/users/userslist');
+//var UsersList = require('../../app/assets/javascripts/users/userslist');
 
 //IMPORTANTE
 /*
@@ -48,18 +48,18 @@ describe('addUserInstance', function() {
   it('should have correct title', function() {
     expect(addUserInstance.title).toBe( 'Add user' );
   });
-  /*
+  
   it('should have two inputs', function() {
     
     addUserInstance.$mount();
     expect(addUserInstance.$el.querySelectorAll('input').length).toBe(2); 
-  });*/
+  });
   
   it('should have a save method', function() {
     expect(typeof addUserInstance.save).toBe( 'function' );
   });
   
-  it('should save users', function(){
+  //it('should save users', function(){
     //usersListInstance.$mount();
     //addUserInstance.$mount();
     
@@ -74,5 +74,5 @@ describe('addUserInstance', function() {
     //check for difference in users
     //expect(usersListInstance.users.length).toBe(usersLength);
     
-  });
+  //});
 })

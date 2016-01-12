@@ -8,11 +8,6 @@
   "scripts": {
     "test": "karma start karma.conf.js"
   },
-  "browserify": {
-    "transform": [
-      "partialify"
-    ]
-  },
   "author": "YerkoPalma",
   "license": "ISC",
   "dependencies": {
